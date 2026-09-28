@@ -16,6 +16,8 @@ module sync_fifo #(
     output logic                  empty
 );
 
+    timeunit 1ns;
+    timeprecision 1ps;
     // Derived constants
     localparam PTR_WIDTH   = $clog2(DEPTH);
     localparam COUNT_WIDTH = $clog2(DEPTH + 1);
